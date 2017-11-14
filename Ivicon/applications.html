@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ivicon - Applications</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+        <div class="container clearfix">
+            <a class="logo-h" href="expedition-search.html">
+                <img class="logo_emblem" src="img/header/logo-h.svg">
+            </a>
+            <nav id="menu" class="header_navigation nav">
+                <ul>
+                  <li class="expedition-item">
+                    <a class="current" href="expedition-search.html">
+                      <img src="img/header/nav-expeditions.svg">
+                      <img class="nav-icon-hover" src="img/header/nav-expeditions-selected.svg">
+                      <span>Expeditions</span>
+                    </a>
+                  </li>
+                  <li class="applicants-item">
+                    <a href="applicants-list.html">
+                        <img src="img/header/nav-applicants.svg">
+                        <img class="nav-icon-hover" src="img/header/nav-applicants-selected.svg">
+                        <span>My Applicants</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+
+            <ul class="user-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="avatar_photo" src="img/header/avatar-01-32x32.jpg" alt="" >
+                        <span>Andre</span>
+                        <img src="img/header/arrow.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile info</a></li>
+                        <li><a href="#">Contact info</a></li>
+                        <li><a href="#">Billing info</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- container -->
+    <div class="container">
+      <div class="row">
+
+        <div id="applications" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+          <h2>Your applications</h2>
+
+          <!-- article -->
+          <article class="clearfix">
+            <div class="details">
+              <img src="img/expeditions/expedition-preview-05.jpg" alt="">
+              <h3>Swimming with Dolphins</h3>
+              <span class="app-status">Application completed</span>
+              <h4>Start date: <span>25/07/2017</span></h4>
+              <ul>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="btns clearfix">
+              <a class="btn-details" href="#">DETAILS</a>
+              <a class="edit" href="#"></a>
+            </div>
+          </article>
+          <!-- end article -->
+
+          <!-- article -->
+          <article class="clearfix">
+            <div class="details">
+              <img src="img/expeditions/expedition-preview-05.jpg" alt="">
+              <h3>Swimming with Dolphins</h3>
+              <span class="app-status">Application ended</span>
+              <h4>Start date: <span>25/07/2017</span></h4>
+              <ul>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="btns clearfix">
+              <a class="reapply" href="#">REAPPLY</a>
+              <a class="btn-details" href="#">DETAILS</a>
+            </div>
+          </article>
+          <!-- end article -->
+
+          <!-- article -->
+          <article class="clearfix">
+            <div class="details">
+              <img src="img/expeditions/expedition-preview-05.jpg" alt="">
+              <h3>Complete your application for: Swimming with Dolphins</h3>
+              <span class="not-completed">3 Steps remaining</span>
+              <h4>Deadline: <span>25/07/2017</span></h4>
+            </div>
+            <div class="btns clearfix">
+              <a class="complete" href="#">COMPLETE</a>
+              <a class="delete-application" data-toggle="modal" data-target="#application-1" href="#"></a>
+            </div>
+          </article>
+          <!-- end article -->
+
+        </div>
+
+        <div id="application-1" class="modal delete-application-popup fade">
+            <div class="modal-dialog">
+                <div class="modal-body">
+
+                    <div class="modal-header">
+                      <h1>Are you sure you want to delete?</h1>
+                      <p>Deleting expedition will cancel your application</p>
+                    </div>
+
+                    <div class="modal-content" >
+                      <article class="clearfix">
+                        <div class="details">
+                          <img src="img/expeditions/expedition-preview-05.jpg" alt="">
+                          <h3>Swimming with Dolphins</h3>
+                          <h4>Start date: <span>25/07/2017</span></h4>
+                          <ul>
+                            <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                            <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                            <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                            <li><img src="img/expeditions/avatar-04-40x40@2x.jpg" alt=""></li>
+                          </ul>
+                        </div>
+                      </article>
+                    </div>
+
+                    <div class="modal-footer clearfix">
+                      <a href="#" class="delete-exped" data-dismiss="modal">DELETE EXPEDITION</a>
+                      <a href="#" class="close-exped" data-dismiss="modal">CANCEL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- container end -->
+
+    <!-- footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 clearfix">
+
+            <ul>
+              <li><a href="#">About Ivicon</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>language:<a href="#">English</a></li>
+            </ul>
+            <p>©2017 Ivicon. All Rights Reserved</p>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    </footer>
+
+  </body>
+
+  <!-- scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- mobile menu -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/mobile-menu.js"></script>
+
+    <script type="text/javascript">
+      $('.delete-application-popup').modal({
+        backdrop: 'static',
+        keyboard: true,
+        show: false
+      })
+    </script>
+
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ivicon - Login</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <div id="login">
+
+        <img class="logo" src="img/logo.svg" alt="ivicon logo">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 push-lg-3 push-md-3 push-sm-2">
+
+              <h2>Membership Login</h2>
+
+              <form class="form-validation">
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Type your email address">
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Type your password">
+                </div>
+
+                <div class="form-group clearfix">
+                  <div class="col-sm-6">
+                    <label class="control control-checkbox">
+                      <input type="checkbox" data-required="true"/>
+                      <div class="control_indicator"></div>
+                      <p>
+                        Remember me
+                      </p>
+                    </label>
+                  </div>
+                  <div class="col-sm-6">
+                    <a class="forgot-btn" href="#">Forgot password?</a>
+                  </div>
+                </div>
+
+                <div class="form-btn">
+                  <div class="clearfix">
+                    <button type="button" class="btn btn-default account-exist">not registered? Sign up</button>
+                    <button type="submit" class="btn btn-default sign-globe">Login</button>
+                  </div>
+                  <hr>
+                  <button type="button" class="btn btn-default fb-sign"><span><i class="fb-icon"></i>sign In using facebook</span></button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 clearfix">
+
+            <ul>
+              <li><a href="#">About Ivicon</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>language:<a href="#">English</a></li>
+            </ul>
+            <p>©2017 Ivicon. All Rights Reserved</p>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    </footer>
+
+  </body>
+
+  <!-- main scripts -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+  <script src="js/form-validation.js"></script>
+
+</html>

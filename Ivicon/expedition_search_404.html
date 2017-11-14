@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ivicon - Expedition Search</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900" rel="stylesheet">
+
+  </head>
+
+  <body class="f-bottom">
+
+    <!-- header -->
+    <header>
+        <div class="container clearfix">
+            <a class="logo-h" href="expedition-search.html">
+                <img class="logo_emblem" src="img/header/logo-h.svg">
+            </a>
+            <nav id="menu" class="header_navigation nav">
+                <ul>
+                  <li class="expedition-item">
+                    <a class="current" href="expedition-search.html">
+                      <img src="img/header/nav-expeditions.svg">
+                      <img class="nav-icon-hover" src="img/header/nav-expeditions-selected.svg">
+                      <span>Expeditions</span>
+                    </a>
+                  </li>
+                  <li class="applicants-item">
+                    <a href="applicants-list.html">
+                        <img src="img/header/nav-applicants.svg">
+                        <img class="nav-icon-hover" src="img/header/nav-applicants-selected.svg">
+                        <span>My Applicants</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+
+            <ul class="user-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="avatar_photo" src="img/header/avatar-01-32x32.jpg" alt="" >
+                        <span>Andre</span>
+                        <img src="img/header/arrow.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile info</a></li>
+                        <li><a href="#">Contact info</a></li>
+                        <li><a href="#">Billing info</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+      <div class="container">
+
+        <div class="row">
+          <!-- expeditions search -->
+          <!-- <div id="expeditionSearch" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <h1 class="expedition-search_title heading">Search for expeditions</h1>
+
+            <form class="expedition-search_form search clearfix">
+                <input class="search_field" type="text" placeholder="Ex. Summer camp…">
+                <a class="filter-btn" href="#"><span>filters</span></a>
+                <div class="filters clearfix">
+                  <div class="search_param">
+                    <select class="cs-select cs-skin-elastic">
+                      <option value="" disabled selected>Any Type</option>
+                      <option value="france" data-class="flag-france">Senior Space School</option>
+                      <option value="brazil" data-class="flag-brazil">Junior Space School</option>
+                      <option value="argentina" data-class="flag-argentina">Robotic School</option>
+                    </select>
+                  </div>
+                  <div class="search_param">
+                    <select class="cs-select cs-skin-elastic">
+                      <option value="" disabled selected>Any price</option>
+                      <option value="france" data-class="flag-france">$1000~ $1999</option>
+                      <option value="brazil" data-class="flag-brazil">$2000~$5000</option>
+                      <option value="argentina" data-class="flag-argentina">$5000+</option>
+                    </select>
+                  </div>
+                  <div class="search_param">
+                    <select class="cs-select cs-skin-elastic">
+                      <option value="" disabled selected>Anytime</option>
+                      <option value="france" data-class="flag-france">Summer 2017</option>
+                      <option value="france" data-class="flag-france">Fall 2017</option>
+                      <option value="france" data-class="flag-france">Winter 2018</option>
+                      <option value="france" data-class="flag-france">Summer 2018</option>
+                    </select>
+                  </div>
+                  <button class="search_submit">
+                      Search
+                  </button>
+                </div>
+            </form>
+
+
+          </div> -->
+          <!-- expeditions search end -->
+        </div>
+
+        <div class="row">
+
+          <!-- results -->
+          <div id="expeditionsRsults">
+
+            <img src="img/expeditions/search-result.svg" alt="">
+            <h2>No expeditions found</h2>
+            <p>
+              You can try again with different keywords or you can <a href="#">browse</a> available expeditions
+            </p>
+
+          </div>
+          <!-- results end -->
+
+        </div>
+
+      </div>
+      <!-- container end -->
+
+    </div>
+    <!-- wrapper end -->
+
+    <!-- footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 clearfix">
+
+            <ul>
+              <li><a href="#">About Ivicon</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>language:<a href="#">English</a></li>
+            </ul>
+            <p>©2017 Ivicon. All Rights Reserved</p>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    </footer>
+
+  </body>
+
+  <!-- scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- mobile menu -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/mobile-menu.js"></script>
+
+    <!-- select -->
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+      (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+          new SelectFx(el);
+        } );
+      })();
+    </script>
+
+    <!-- filters -->
+    <script src="js/search.js"></script>
+
+
+</html>

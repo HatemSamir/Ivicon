@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ivicon - Expedition details</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- slider css -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+        <div class="container clearfix">
+            <a class="logo-h" href="expedition-search.html">
+                <img class="logo_emblem" src="img/header/logo-h.svg">
+            </a>
+            <nav id="menu" class="header_navigation nav">
+                <ul>
+                  <li class="expedition-item">
+                    <a class="current" href="expedition-search.html">
+                      <img src="img/header/nav-expeditions.svg">
+                      <img class="nav-icon-hover" src="img/header/nav-expeditions-selected.svg">
+                      <span>Expeditions</span>
+                    </a>
+                  </li>
+                  <li class="applicants-item">
+                    <a href="applicants-list.html">
+                        <img src="img/header/nav-applicants.svg">
+                        <img class="nav-icon-hover" src="img/header/nav-applicants-selected.svg">
+                        <span>My Applicants</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+
+            <ul class="user-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="avatar_photo" src="img/header/avatar-01-32x32.jpg" alt="" >
+                        <span>Andre</span>
+                        <img src="img/header/arrow.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile info</a></li>
+                        <li><a href="#">Contact info</a></li>
+                        <li><a href="#">Billing info</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- expedition slider -->
+    <section id="expedSlider">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/expeditions_details/exped-details-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/expeditions_details/exped-details-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/expeditions_details/exped-details-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/expeditions_details/exped-details-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <div class="apply-exped-details">
+
+              <div>
+                <h2>Swimming with Dolphins</h2>
+                <div class="param-container">
+                  <div class="apply-param">
+                    <h3>Price</h3>
+                    <span class="param-info">$450</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Category</h3>
+                    <span class="param-info">Exibition</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Duration</h3>
+                    <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                    <span>5 nights</span>
+                  </div>
+                </div>
+              </div>
+
+              <a class="apply-exped-btn" href="#" data-toggle="modal" data-target="#applyPopup">Apply to expedition</a>
+
+            </div>
+
+            <!-- deleted-expedition -->
+            <!-- <div class="apply-exped-details deleted-expedition">
+
+              <div>
+                <h2>Swimming with Dolphins</h2>
+                <div class="param-container">
+                  <div class="apply-param">
+                    <h3>Price</h3>
+                    <span class="param-info">$450</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Category</h3>
+                    <span class="param-info">Exibition</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Duration</h3>
+                    <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                    <span>5 nights</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="deleted-button-status">
+                <a class="apply-exped-btn" href="#">you can’t apply to this expedition</a>
+                <p>This expedition has been deleted.</p>
+              </div>
+
+            </div> -->
+
+            <!-- applied-application -->
+            <!-- <div class="apply-exped-details applied-application">
+
+              <div>
+                <h2>Swimming with Dolphins</h2>
+                <div class="param-container">
+                  <div class="apply-param">
+                    <h3>Price</h3>
+                    <span class="param-info">$450</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Category</h3>
+                    <span class="param-info">Exibition</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Duration</h3>
+                    <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                    <span>5 nights</span>
+                  </div>
+                </div>
+              </div>
+
+              <a class="apply-exped-btn" href="#">applied</a>
+
+            </div> -->
+
+            <!-- application-complete -->
+            <!-- <div class="apply-exped-details application-complete">
+
+              <div>
+                <h2>Swimming with Dolphins</h2>
+                <div class="param-container">
+                  <div class="apply-param">
+                    <h3>Price</h3>
+                    <span class="param-info">$450</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Category</h3>
+                    <span class="param-info">Exibition</span class="param-info">
+                  </div>
+                  <div class="apply-param">
+                    <h3>Duration</h3>
+                    <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                    <span>5 nights</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="complete-button">
+                <a class="apply-exped-btn" href="#" data-toggle="modal" data-target="#applyPopup">complete application</a>
+                <p>You didn’t complete your application for this expedition yet</p>
+                <h3>Deadline: <span>25/07/2017</span></h3>
+              </div>
+
+            </div> -->
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="fixed">
+
+        <div class="apply-exped-details clearfix">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div>
+                  <h2>Swimming with Dolphins</h2>
+                  <div class="param-container">
+                    <div class="apply-param">
+                      <h3>Price</h3>
+                      <span class="param-info">$450</span class="param-info">
+                    </div>
+                    <div class="apply-param">
+                      <h3>Category</h3>
+                      <span class="param-info">Exibition</span class="param-info">
+                    </div>
+                    <div class="apply-param">
+                      <h3>Duration</h3>
+                      <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                      <span>5 nights</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="apply-exped-btn" href="#" data-toggle="modal" data-target="#applyPopup">Apply to expedition</a>
+
+                <hr>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- deleted-expedition -->
+        <!-- <div class="apply-exped-details deleted-expedition-extended clearfix">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <p>This expedition has been deleted. Please check <a href="#">Expedtions</a> tab for more options</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+
+        <!-- application-complete-extended -->
+        <!-- <div class="apply-exped-details application-complete-extended clearfix">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div>
+                  <h2>Swimming with Dolphins</h2>
+                  <h4>Deadline: <span>25/07/2017</span></h4>
+                  <div class="param-container">
+                    <div class="apply-param">
+                      <h3>Price</h3>
+                      <span class="param-info">$450</span class="param-info">
+                    </div>
+                    <div class="apply-param">
+                      <h3>Category</h3>
+                      <span class="param-info">Exibition</span class="param-info">
+                    </div>
+                    <div class="apply-param">
+                      <h3>Duration</h3>
+                      <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                      <span>5 nights</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="apply-exped-btn" href="#" data-toggle="modal" data-target="#applyPopup">complete application</a>
+
+                <hr>
+
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+
+        <!-- edit-application -->
+        <!-- <div class="apply-exped-details edit-application clearfix">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div>
+                  <h2>Swimming with Dolphins</h2>
+                  <div class="param-container">
+                    <div class="apply-param">
+                      <h3>Price</h3>
+                      <span class="param-info">$450</span class="param-info">
+                    </div>
+                    <div class="apply-param">
+                      <h3>Category</h3>
+                      <span class="param-info">Exibition</span class="param-info">
+                    </div>
+                    <div class="apply-param">
+                      <h3>Duration</h3>
+                      <span class="param-info">12JAN - 30 FEB</span class="param-info">
+                      <span>5 nights</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="apply-exped-btn" href="#">edit application</a>
+
+                <hr>
+
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+    </section>
+    <!-- expedition slider end -->
+
+    <!-- expedition details  -->
+    <div id="expeditionDetails">
+
+      <!-- container -->
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 push-lg-2">
+
+            <h1>Aboout Expedition</h1>
+            <p>
+              Sierra Tarahumara, popularly known as Copper Canyon is situated in Mexico. The area is a favorite destination
+              among those seeking an adventurous vacation. Copper Canyon is one of the six gorges in the area.
+              Although the name suggests that the gorge might have some relevance to copper mining, this is not the case.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 push-lg-2">
+            <h2>Subtitle goes here</h2>
+            <p>
+              The name is derived from the copper and green lichen covering the canyon. Copper Canyon has two climatic zones.
+              The region features an alpine climate at the top and a subtropical climate at the lower levels. Winters are cold
+              with frequent snowstorms at the higher altitudes.
+            </p>
+            <p>
+              Summers are dry and hot. The capital city, Chihuahua, is a high altitude desert where weather ranges from cold
+               winters to hot summers. The region is unique because of the various ecosystems that exist within it.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 push-lg-2">
+            <img class="img-responsive" src="img/expeditions_details/about-1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="timeline col-lg-8 col-md-12 col-sm-12 col-xs-12 push-lg-2">
+            <h1>Schedule</h1>
+            <p>
+              The region features an alpine climate at the top and a subtropical climate at the lower levels. Winters are
+               cold with frequent snowstorms at the higher altitudes.
+            </p>
+            <div>
+              <h3>Day 1</h3>
+              <ul>
+                <li>
+                  <span>8:00 AM</span>
+                  <span>Waking up and refreshing</span>
+                </li>
+                <li>
+                  <span>10:00 AM</span>
+                  <span>Breakfast and yoga</span>
+                </li>
+                <li>
+                  <span>12:00 AM</span>
+                  <span>Sightseeing the nearby monuments</span>
+                </li>
+              </ul>
+              <h3>Day 2</h3>
+              <ul>
+                <li>
+                  <span>8:00 AM</span>
+                  <span>Waking up and refreshing</span>
+                </li>
+                <li>
+                  <span>10:00 AM</span>
+                  <span>Breakfast and yoga</span>
+                </li>
+                <li>
+                  <span>12:00 AM</span>
+                  <span>Sightseeing the nearby monuments</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="additional-info col-lg-8 col-md-12 col-sm-12 col-xs-12 push-lg-2">
+
+            <h1>Aditional information</h1>
+            <p>
+              Sierra Tarahumara, popularly known as Copper Canyon is situated in Mexico. The area is a favorite destination
+              among those seeking an adventurous vacation. Copper Canyon is one of the six gorges in the area.
+              Although the name suggests that the gorge might have some relevance to copper mining, this is not the case.
+            </p>
+
+            <h2>What you’re children will learn</h2>
+            <ul>
+              <li>Communication skills.</li>
+              <li>Advanced swimming.</li>
+              <li>Dealing with dolphins.</li>
+            </ul>
+
+            <p>
+              Sierra Tarahumara, popularly known as Copper Canyon is situated in Mexico. The area is a favorite destination
+               among those seeking an adventurous vacation. Copper Canyon is one of the six gorges in the area. Although the
+                name suggests that the gorge might have some relevance to copper mining, this is not the case.
+            </p>
+
+            <p class="alert">
+              This expedition requires all applicants to have the ability of swimming
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- container end -->
+
+    </div>
+    <!-- expedition details end -->
+
+
+    <!-- Modal -->
+    <div class="col-md-4">
+        <div id="applyPopup" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                      <h1>Apply for Swimming with Dolphins</h1>
+                      <a href="#" class="close-apply" data-dismiss="modal">Close</a>
+                    </div>
+                    <form class="apply-form" method="post">
+                			<fieldset class="personal-data">
+
+                        <div class="applicant-info">
+                          <button type="button" class="delete" name="button">DELETE</button>
+                          <h2>Applicant Information</h2>
+                          <div class="form-group">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="name" placeholder="Type your name here" />
+                          </div>
+                          <div class="form-group">
+                            <label for="bday">Birth Day</label>
+                             <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="bday" placeholder="MM/DD/YYYY" />
+                          </div>
+                          <div class="form-group">
+                            <label for="school">School</label>
+                  					<input type="text" name="school" id="school" placeholder="Type your school name" />
+                          </div>
+
+                        </div>
+
+                        <!-- <div class="select-applicants">
+                          <h2>Select Applicant</h2>
+                          <div class="applicant clearfix">
+                            <h3><img src="img/expeditions/avatar-01-80x80@2x.jpg" alt="">Kenzi Burns</h3>
+                            <a class="select-applicant-btn" href="#"><span>select</span></a>
+                          </div>
+                          <div class="applicant clearfix">
+                            <h3><img src="img/expeditions/avatar-01-80x80@2x.jpg" alt="">Maxine Burns</h3>
+                            <a class="select-applicant-btn" href="#"><span>select</span></a>
+                          </div>
+                        </div> -->
+
+                        <a class="add-applicant" href="#">Add another Applicant</a>
+
+                        <div class="form-group desired-date">
+                          <label for="Desired">Desired date</label>
+                          <select id="Desired" name="Desired" class="cs-select cs-skin-elastic" onchange="selected(this)" >
+                            <option value="" disabled selected>Choose start date</option>
+                            <option value="">06/07/2010</option>
+                            <option value="">06/07/2011</option>
+                            <option value="">06/07/2012</option>
+                            <option value="">06/07/2013</option>
+                            <option value="">06/07/2014</option>
+                            <option value="">06/07/2015</option>
+                          </select>
+                        </div>
+
+                        <div class="apply-for-self clearfix">
+                          <img src="img/expeditions/avatar-01-40x40.jpg" alt="">
+                          <h2>Applying for yourself?</h2>
+                          <a class="select-applicant-btn" href="#">select</a>
+                        </div>
+
+                        <p class="legal">By applying you’re agreeing to expedition’s <a href="#">legal agreement</a></p>
+
+
+                			</fieldset>
+
+                			<fieldset class="address-data-inputs">
+
+                          <div class="payment">
+
+                            <div class="payment-head clearfix">
+                              <h2>Payment</h2>
+                              <span id="applicantsCount" class="applicants-num">Applying for 1 Applicants</span>
+                              <span>400$</span>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="card-num">Card Number</label>
+                              <input type="number" id="card-num" name="cardNum" placeholder="Enter card number here" />
+                            </div>
+
+                            <div class="group clearfix">
+
+                              <div class="form-group">
+                                <label for="expire-date">Expiration Date</label>
+                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="expire-date" name="expireDate" placeholder="MM.YY" />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="cvc">CVC</label>
+                                <input type="number" id="cvc" name="cvc" placeholder="CVC number" />
+                              </div>
+
+                            </div>
+
+                            <div class="payment-footer clearfix">
+                              <a href="#">Refun Policy</a>
+                              <img src="img/expeditions/authrized.jpg" alt="">
+                            </div>
+
+                          </div>
+
+
+                			</fieldset>
+
+                			<fieldset class="message-success">
+              					<img src="img/apply-success.svg" alt="">
+                        <h1>All good Joe</h1>
+                        <p>You will be redirected to application page</p>
+                        <i class="indicator" title="Loading in progress">Loading...</i>
+                		</form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal-->
+
+
+    <!-- footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 clearfix">
+
+            <ul>
+              <li><a href="#">About Ivicon</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>language:<a href="#">English</a></li>
+            </ul>
+            <p>©2017 Ivicon. All Rights Reserved</p>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+
+
+  <!-- scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- mobile menu -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/mobile-menu.js"></script>
+
+    <!-- slider -->
+    <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+           margin:10,
+           nav:false,
+           autoplay: true,
+           smartSpeed:750,
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:1
+               },
+               1000:{
+                   items:1
+               }
+           }
+        });
+      })
+    </script>
+
+    <!-- apply form -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+  	<script type="text/javascript" src="js/simpleform.js"></script>
+    <script type="text/javascript" src="js/apply.js"></script>
+
+    <!-- select -->
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+      (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+          new SelectFx(el);
+        } );
+      })();
+    </script>
+
+
+</html>

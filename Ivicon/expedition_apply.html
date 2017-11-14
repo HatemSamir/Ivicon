@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ivicon - Expedition details</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900" rel="stylesheet">
+
+  </head>
+
+  <body class="apply-bg">
+
+    <!-- header -->
+    <header>
+        <div class="container clearfix">
+            <a class="logo-h" href="expedition-search.html">
+                <img class="logo_emblem" src="img/header/logo-h.svg">
+            </a>
+            <nav id="menu" class="header_navigation nav">
+                <ul>
+                  <li class="expedition-item">
+                    <a class="current" href="expedition-search.html">
+                      <img src="img/header/nav-expeditions.svg">
+                      <img class="nav-icon-hover" src="img/header/nav-expeditions-selected.svg">
+                      <span>Expeditions</span>
+                    </a>
+                  </li>
+                  <li class="applicants-item">
+                    <a href="applicants-list.html">
+                        <img src="img/header/nav-applicants.svg">
+                        <img class="nav-icon-hover" src="img/header/nav-applicants-selected.svg">
+                        <span>My Applicants</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+
+            <ul class="user-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="avatar_photo" src="img/header/avatar-01-32x32.jpg" alt="" >
+                        <span>Andre</span>
+                        <img src="img/header/arrow.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile info</a></li>
+                        <li><a href="#">Contact info</a></li>
+                        <li><a href="#">Billing info</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12">
+          <div id="applyPage">
+            <div id="applyPopup">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <a class="back-to-exped" href="#">back to expedition</a>
+                        <div class="modal-header clearfix">
+                          <h1>Apply for Swimming with Dolphins</h1>
+                        </div>
+                        <form class="apply-form" method="post">
+                    			<fieldset class="personal-data">
+
+                            <div class="applicant-info">
+                              <button type="button" class="delete" name="button">DELETE</button>
+                              <h2>Applicant Information</h2>
+                              <div class="form-group">
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" placeholder="Type your name here" />
+                              </div>
+                              <div class="form-group">
+                                <label for="bday">Birth Day</label>
+                                 <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="bday" placeholder="MM/DD/YYYY" />
+                              </div>
+                              <div class="form-group">
+                                <label for="school">School</label>
+                      					<input type="text" name="school" id="school" placeholder="Type your school name" />
+                              </div>
+
+                            </div>
+
+                            <!-- <div class="select-applicants">
+                              <h2>Select Applicant</h2>
+                              <div class="applicant clearfix">
+                                <h3><img src="img/expeditions/avatar-01-80x80@2x.jpg" alt="">Kenzi Burns</h3>
+                                <a class="select-applicant-btn" href="#"><span>select</span></a>
+                              </div>
+                              <div class="applicant clearfix">
+                                <h3><img src="img/expeditions/avatar-01-80x80@2x.jpg" alt="">Maxine Burns</h3>
+                                <a class="select-applicant-btn" href="#"><span>select</span></a>
+                              </div>
+                            </div> -->
+
+                            <a class="add-applicant" href="#">Add another Applicant</a>
+
+                            <div class="form-group desired-date">
+                              <label for="Desired">Desired date</label>
+                              <select id="Desired" name="Desired" class="cs-select cs-skin-elastic" onchange="selected(this)" >
+                                <option value="" disabled selected>Choose start date</option>
+                                <option value="">06/07/2010</option>
+                                <option value="">06/07/2011</option>
+                                <option value="">06/07/2012</option>
+                                <option value="">06/07/2013</option>
+                                <option value="">06/07/2014</option>
+                                <option value="">06/07/2015</option>
+                              </select>
+                            </div>
+
+                            <div class="apply-for-self clearfix">
+                              <img src="img/expeditions/avatar-01-40x40.jpg" alt="">
+                              <h2>Applying for yourself?</h2>
+                              <a class="select-applicant-btn" href="#">select</a>
+                            </div>
+
+                            <p class="legal">By applying you’re agreeing to expedition’s <a href="#">legal agreement</a></p>
+
+
+                    			</fieldset>
+
+                    			<fieldset class="address-data-inputs">
+
+                              <div class="payment">
+
+                                <div class="payment-head clearfix">
+                                  <h2>Payment</h2>
+                                  <span id="applicantsCount" class="applicants-num">Applying for 1 Applicants</span>
+                                  <span>400$</span>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="card-num">Card Number</label>
+                                  <input type="number" id="card-num" name="cardNum" placeholder="Enter card number here" />
+                                </div>
+
+                                <div class="group clearfix">
+
+                                  <div class="form-group">
+                                    <label for="expire-date">Expiration Date</label>
+                                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="expire-date" name="expireDate" placeholder="MM.YY" />
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="cvc">CVC</label>
+                                    <input type="number" id="cvc" name="cvc" placeholder="CVC number" />
+                                  </div>
+
+                                </div>
+
+                                <div class="payment-footer clearfix">
+                                  <a href="#">Refun Policy</a>
+                                  <img src="img/expeditions/authrized.jpg" alt="">
+                                </div>
+
+                              </div>
+
+
+                    			</fieldset>
+
+                    			<fieldset class="message-success">
+                  					<img src="img/apply-success.svg" alt="">
+                            <h1>All good Joe</h1>
+                            <p>You will be redirected to application page</p>
+                            <i class="indicator" title="Loading in progress">Loading...</i>
+                    		</form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 clearfix">
+
+            <ul>
+              <li><a href="#">About Ivicon</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>language:<a href="#">English</a></li>
+            </ul>
+            <p>©2017 Ivicon. All Rights Reserved</p>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+
+
+  <!-- scripts -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- mobile menu -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/mobile-menu.js"></script>
+
+
+    <!-- apply form -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+  	<script type="text/javascript" src="js/simpleform.js"></script>
+    <script type="text/javascript" src="js/apply.js"></script>
+
+    <!-- select -->
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+      (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+          new SelectFx(el);
+        } );
+      })();
+    </script>
+
+
+</html>
